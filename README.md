@@ -16,6 +16,7 @@ It defines the kinds of calls or requests that can be made
 </ul>
 
 ![API](https://github.com/Niranjanprof/API-JSON/blob/master/RSC/1.png)![API](https://github.com/Niranjanprof/API-JSON/blob/master/RSC/2.png)
+
 ---
 
 # JavaScript Object Notation
