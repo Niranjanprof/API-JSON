@@ -31,6 +31,7 @@ Replacement for XML in AJAX systems
 
 </ul>
 ---
+
 ##  Simple json example
 
 
@@ -144,12 +145,9 @@ Replacement for XML in AJAX systems
 	</html>
 ```
 
-```
-
-```
 ---
 
-## As pyhton dictionary
+## As python dictionary
 ```python
 import json
 
