@@ -15,6 +15,7 @@ It defines the kinds of calls or requests that can be made
 </li>
 </ul>
 
+![API]()![API]()
 ---
 
 # JavaScript Object Notation
@@ -103,46 +104,46 @@ Replacement for XML in AJAX systems
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
 		<meta charset='UTF-8'>
-			<title>JSON To HTML using codebeautify.org</title>
-		</head>
-		<body>
-			<table border=1>
-				<thead>
-					<tr>
-						<th>Name,isAlive,Age,address,phoneNumbers</th>
-						<th>COLUMN2</th>
-						<th>COLUMN3</th>
-						<th>COLUMN4</th>
-						<th>COLUMN5</th>
-						<th>COLUMN6</th>
-						<th>COLUMN7</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Prof.Moriarty,true,18,Hill Street</td>
-						<td>New York</td>
-						<td>NY</td>
-						<td>10021-3100,office</td>
-						<td>212 352-1353</td>
-						<td>personal</td>
-						<td>146 125-8637</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-					</tr>
-				</tbody>
-			</table>
-		</body>
-	</html>
+		<title>JSON To HTML using codebeautify.org</title>
+	</head>
+	<body>
+		<table border=1>
+			<thead>
+				<tr>
+					<th>Name,isAlive,Age,address,phoneNumbers</th>
+					<th>COLUMN2</th>
+					<th>COLUMN3</th>
+					<th>COLUMN4</th>
+					<th>COLUMN5</th>
+					<th>COLUMN6</th>
+					<th>COLUMN7</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Prof.Moriarty,true,18,Hill Street <td>
+					<td>New York</td>
+					<td>NY</td>
+					<td>10021-3100,office</td>
+					<td>212 352-1353</td>
+					<td>personal</td>
+					<td>146 125-8637</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
 ```
 
 ---
