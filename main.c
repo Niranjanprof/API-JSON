@@ -1,108 +1,118 @@
 #include<stdio.h>
-// Loading Something which makes this a C Program
-// Preprocessor directives
 
 int main() {
-    // data types
-//    int a;
-//    char c;
-//    float f = 4.0;
 
-    // Main Program
-//    printf("Hello World");
+//    int i = 1;
+//    while (i<10){
+//        printf("%d\n",i);
+//         i++;
+//    }
 
-    // format
-    // format specifier
-//    printf("The Number I stored was %d",a);
-//    printf("The Charc I stored was %c",c);
-//    printf("Enter a data for variable c: ");
-//    scanf("%c", &c);
-//    printf("Data :- %c",c);
-    // & :- addressOf, unary
+//    for (int i = 1; i < 10; i++) {
+//        printf("%d\n", i);
+//    }
 
-//    int age = 17;
-//    if (age >= 18) {
-//        printf("Y");
+    // i = 9
+    // 10 < 10
+    // 2
+
+//    int a = 123;
+//    int b = 10;
+//    int c = a/b; // Division  12
+//    int d = a%b; // Remainder 3
+//
+//    printf("Quo :- %d\nRem :- %d",c,d);
+
+// Sum of Nat Numbers
+
+//    int limit = 0;
+//    printf("Enter a limit: ");
+//    scanf("%d", &limit);
+//
+//    int sum = 0;
+//    for (int i = 1; i < limit + 1; i++) {
+//        sum = sum + i;
+//        printf("Sum :- %d : i :- %d\n", sum, i);
+//    }
+//    printf("Sum:- %d\n", sum);
+
+    // sum  = 55   i = 11
+    // 11 <= 10
+    // sum  = 45 + 10
+    // i++ = 11
+//    int sum = 0;
+//    int i = 1;
+//    while (i < 11) {
+//        sum += i;
+//        i++;
+//    }
+//    printf("Sum:- %d\n", sum);
+
+//    int number = 0;
+//    printf("Enter a number: ");
+//    scanf("%d", &number);
+//
+//    if (number % 2 == 0) {
+//        printf("Even Number");
 //    } else {
-//        printf("N");
+//        printf("Odd Number");
 //    }
 
-//    (age >= 18) ? printf("Y") : printf("N");
-    // ternary operator
+// Sum of digits
 
-//    int age = 9;
-//    if (age >= 18) {
-//        printf("Y"); // greater or equal to 18
-//    } else if (age >= 10) {
-//        printf("N");  // (less than 18) or greater than 10
-//    } else {
-//        printf("O"); // less than 10
-//    }
+    // 456 = 4+5+6 = 15
 
-//     int month = 2;
-//     if(month == 1){
-//         printf("Jan");
-//     }else if(month == 2){
-//         printf("Feb");
-//     }else if(month == 3){
-//         printf("Mar");
-//     }else{
-//         printf("No Month");
-//     }
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    int rem;
+    int sum = 0;
 
-//    switch (month){
-//         case 1: printf("Jan");
-//            break;
-//         case 2:printf("Feb");
-//            break;
-//         case 3:printf("Mar");
-//            break;
-//         default:
-//             printf("No Month");
-//     }
+//    int temp = num;
+    printf("Sum of digits in %d = ", num);
+    while (num > 0) {
+        sum = sum + (num % 10);
+        num = num / 10;
+    }
+//    printf("Num = %d\n", num);
+    printf("%d", sum);
 
-//    /*Initialization*/
-//    while (/*Condition*/) {
-//        /* body */
-//        /*Updation*/
-//    }
+    // 4 <= 4
+    // rem = 4
+    // sum = 15
+    // num = 0
+    // i = 4
 
-//    int count = 1;
-//    while (count < 4) {
-//        printf("A");
-//        count = count + 1;
-//    }
-//    printf("End :- %d\n", count);
+    // palindrome
 
-//    for(int count = 1;count < 4;count = count + 1){
-//        printf("A");
-//    }
+    int num;
+    printf("Enter a number to check whether it's palindrome or not: ");
+    scanf("%d", &num);
+    int temp = num;
+    int rev = 0;
+    while (num != 0) {
+        rev = (rev * 10) + (num % 10);
+        num = num / 10;
+    }
+    (temp == rev) ? printf("Palindrome") : printf("Not a Palindrome");
 
-//    for(/*Initialization*/;/*Condition*/;/*Updation*/){
-//        /* body */
-//    }
+    // factorial
+
+    // 5! = 5*4*3*2*1
+
+    int num = 5;
+    int fact = 1;
+    for (; num > 1; num--) {
+        fact = fact * num;
+        printf("num = %d : fact = %d\n", num, fact);
+    }
+
+    printf("Fact: - %d", fact);
+
+//   371 = 3^3 + 7^3 + 1^3 = 27 + 343 + 1 = 371
+// num of digits = 3
 
 
-//    do{
-//        printf("A");
-//        count = count + 1;
-//    } while (count < 1);
-
-    // count = 1   A
-    // count = 2   A
-    // count = 3   A
-    // count = 4
-
-    unsigned long long int a = 6757474744545;
-
-    a = 5 + 15 / 3;
-
-    a = a + 1;
-    a += 1;
-    a++;//operand
-    // unary operator
-
-    a = 7;
 
     return 0;
 }
