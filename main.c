@@ -2,117 +2,69 @@
 
 int main() {
 
-//    int i = 1;
-//    while (i<10){
-//        printf("%d\n",i);
-//         i++;
-//    }
-
-//    for (int i = 1; i < 10; i++) {
-//        printf("%d\n", i);
-//    }
-
-    // i = 9
-    // 10 < 10
-    // 2
-
-//    int a = 123;
-//    int b = 10;
-//    int c = a/b; // Division  12
-//    int d = a%b; // Remainder 3
+//    // data_type array_name[size]
 //
-//    printf("Quo :- %d\nRem :- %d",c,d);
+//    int a[] = {1, 2, 3};
+//    for (int i = 0; i < 3; ++i) {
+//        printf("%d ", a[i]);
+//    }
 
-// Sum of Nat Numbers
-
-//    int limit = 0;
-//    printf("Enter a limit: ");
-//    scanf("%d", &limit);
+//    int total_1, total_2;
 //
-//    int sum = 0;
-//    for (int i = 1; i < limit + 1; i++) {
-//        sum = sum + i;
-//        printf("Sum :- %d : i :- %d\n", sum, i);
-//    }
-//    printf("Sum:- %d\n", sum);
-
-    // sum  = 55   i = 11
-    // 11 <= 10
-    // sum  = 45 + 10
-    // i++ = 11
-//    int sum = 0;
-//    int i = 1;
-//    while (i < 11) {
-//        sum += i;
-//        i++;
-//    }
-//    printf("Sum:- %d\n", sum);
-
-//    int number = 0;
-//    printf("Enter a number: ");
-//    scanf("%d", &number);
+//    start:
+//    printf("Enter the number of elements in Array 1: ");
+//    scanf("%d", &total_1);
 //
-//    if (number % 2 == 0) {
-//        printf("Even Number");
-//    } else {
-//        printf("Odd Number");
+//    printf("Enter the number of elements in Array 2: ");
+//    scanf("%d", &total_2);
+//
+//    printf("Enter the elements in Array 1: ");
+//    for (int i = 0; i < total_1; i++) { // 5
+//        scanf("%d", &a[i]); //12 23 45 89 90
 //    }
+//    printf("Enter the elements in Array 2: ");
+//    for (int j = 0; j < total_2; j++) { // 3
+//        scanf("%d", &b[j]); //11 23 22
+//    }
+//
+////    int flag = 0;
+//    for (int i = 0; i < total_1; ++i) {
+//        for (int j = 0; j < total_2; ++j) {
+////            printf("%d == %d\n", a[i], b[j]);
+//            if (a[i] == b[j]) {
+//                printf("%d is a common element\n", a[i]);
+//                goto start;
+//            }
+//        }
+//    }
+////    if (flag == 0) {
+////        printf("No Common Elements");
+////    }
+////    end:
+//
+//
+//
+//
+//
+////    printf("Enter the roll.no of student to be searched: ");
+////    scanf("%d", &search);
+////
+////    int flag = 0;
+////    for (int i = 0; i < total; ++i) {
+////        if (arr[i] == search) {
+////            flag = 1;
+////            break;
+////        }
+////    }
+////    if (flag == 0) {
+////        printf("Absent");
+////    } else {
+////        printf("Present");
+////    }
 
-// Sum of digits
-
-    // 456 = 4+5+6 = 15
-
-    int num;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    int rem;
-    int sum = 0;
-
-//    int temp = num;
-    printf("Sum of digits in %d = ", num);
-    while (num > 0) {
-        sum = sum + (num % 10);
-        num = num / 10;
-    }
-//    printf("Num = %d\n", num);
-    printf("%d", sum);
-
-    // 4 <= 4
-    // rem = 4
-    // sum = 15
-    // num = 0
-    // i = 4
-
-    // palindrome
-
-    int num;
-    printf("Enter a number to check whether it's palindrome or not: ");
-    scanf("%d", &num);
-    int temp = num;
-    int rev = 0;
-    while (num != 0) {
-        rev = (rev * 10) + (num % 10);
-        num = num / 10;
-    }
-    (temp == rev) ? printf("Palindrome") : printf("Not a Palindrome");
-
-    // factorial
-
-    // 5! = 5*4*3*2*1
-
-    int num = 5;
-    int fact = 1;
-    for (; num > 1; num--) {
-        fact = fact * num;
-        printf("num = %d : fact = %d\n", num, fact);
-    }
-
-    printf("Fact: - %d", fact);
-
-//   371 = 3^3 + 7^3 + 1^3 = 27 + 343 + 1 = 371
-// num of digits = 3
-
-
+//    start:
+//    printf("Loop");
+//    goto start;
 
     return 0;
 }
