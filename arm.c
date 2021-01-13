@@ -1,26 +1,30 @@
-# include <stdio.h>
-# include <math.h>
+# include<stdio.h>
 
-int main() {
-    int num, temp, sum = 0;
-    printf("Enter a number: ");
-    scanf("%d", &num);
+int strlen(char str[]) {
+    int i = 0;
+    while (str[i] != '\0') i++;
+    return i;
+}
 
-    temp = num;
-
-    int length = 0;
-    while (num > 0) {
-        num /= 10;
-        length++;
+void strccat(char first[], char sec[]) {
+    int i = strlen(first);
+    int j = 0;
+    while (sec[j] != '\0') {
+        first[i] = sec[j];
+        i++;
+        j++;
     }
-    num = temp;
-    printf("Length of %d is %d", num, length);
+    first[i] = '\0';
+}
 
-    while (num > 0) {
-        sum += pow(num % 10, length);
-        num /= 10;
-    }
+void main() {
+    char str[20];
+    char abc[20];
 
-    (temp == sum) ? printf("ARM") : printf("Not ARM");
-
+    printf("Enter first name: ");
+    gets(abc);
+    printf("Enter last name: ");
+    gets(str);
+    strccat(abc, str);
+    printf("String :- %s", abc);
 }
