@@ -1,36 +1,19 @@
 # include <stdio.h>
 
-//# define MAX 10 // Compile Time Code Generation
-// int MAX = 10 // Memory
-
-# define print_integer(x) printf("%d",x)
-# define print_string(x) printf("%s",x)
-# define print(x,y) printf(x,y)
+void print(int *ptr) {
+    *(ptr + 2) = 10; // *(ptr + 2) = ptr[2]
+    for (int i = 0; i < 5; ptr++, i++) {
+        printf("%d ", *(ptr));
+    }
+}
 
 int main() {
-//    int arr[MAX];
-//    //
-//    //
-//    //
-//    int ptr[MAX];
 
-
-//    int age = 27;
-//    conditon(age, 18)
-//    {
-    print_integer(5);
-    print_string("Hello World");
-    print("%s","Hello");
-//    }
-//    conditon(age, 30)
-//    {
-//        printf("Hi");
-//    }
-//    loop(1,10){
-//        printf("%d\n",i);
-//    }
-
-
-
+    int arr[] = {1, 2, 3, 4, 5};
+    print(arr);
+    printf("\n");
+    for (int i = 0; i < 5; ++i) {
+        printf("%d ", arr[i]);
+    }
 
 }
