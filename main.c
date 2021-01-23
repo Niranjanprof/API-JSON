@@ -1,43 +1,53 @@
 #include<stdio.h>
 
-// datatype def
-struct student {
-    int roll_no; // 4
-    char name[30]; // 1 * 30
-    int age; // 4
-    float percentage; // 4  = 42
-};
+//void swap(int *x, int *y) {   // x // y
+//    int temp = *x;
+//    *x = *y;
+//    *y = temp;
+//    printf("\na=%d,b=%d", *x, *y);
+//}
 
 void main() {
-    struct student students[10]; // 42* 10 = 420
 
-    printf("\nEnter Data\n");
-    for (int i = 0; i < 3; ++i) { // 0,1,2
-        printf("\n\nEnter Details of Student %d\n", i + 1);
-        printf("Enter you Roll Number: ");
-        scanf("%d", &students[i].roll_no);
-        printf("Enter you name: ");
-        scanf("%s", students[i].name);
-        printf("Enter your age: ");
-        scanf("%d", &students[i].age);
-        printf("Enter your percentage: ");
-        scanf("%f", &students[i].percentage);
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // 4 * 10 = 40  arr - base address
+    int *ptr = arr;
+//    for (int i = 0; i < 10; ++i) {
+//        printf("%d ", *(ptr + i));
+//    }
+
+    while (ptr != arr + 10) { // 80 + 10 * 4 = 120  // 1,
+        printf("%d \n", *(ptr));
+        ptr++;
     }
 
-    for (int i = 0; i < 3; ++i) {
-        if (students[i].percentage <= 95) {
-            students[i].percentage += 5;
-        }
+    while (ptr != arr) { // 80 + 10 * 4 = 120  // 1,
+        printf("%d \n", *(--ptr));
     }
 
-    printf("\nDetails of Students\n");
-    for (int i = 0; i < 3; ++i) {
-        printf("\n\nStudent %d\nRoll No:- %d\nName:- %s\nAge:- %d\nPercentage:- %.2f",
-               i + 1,
-               students[i].roll_no,
-               students[i].name,
-               students[i].age,
-               students[i].percentage);
-    }
+    // ptr = arr ( ptr ,arr not same )
+    // ptr[i] =  *(ptr + i)
+    // arr[i] = *(arr + i)
+    // ptr++ // ptr = ptr + 2
+    // arr++ Not possible
+
+
+
+//    int a = 5, b = 3;
+//    printf("a=%d,b=%d", a, b);
+//    // a= 3 b =5
+//    swap(&a, &b); // call by reference
+//    printf("\na=%d,b=%d", a, b);
+
+
+
+//    int a = 5;
+//    int *ptr = &a; // & addressof referencing
+//    printf("%d", a);
+//    printf("\n%d", *ptr); // * indirection valueof de-referencing
+//    printf("\n%d", &a);
+//    printf("\n%d", ptr);
+
+    // ptr == &a
+    // *ptr == a
 
 }
